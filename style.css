@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #4834d4;
+    --success-color: #6ab04c;
+    --warning-color: #f0932b;
+    --danger-color: #eb4d4b;
+    --light-color: #212529;
+    --light-second-color: #727475;
+    --light-background: #ffffff;
+    --light-second-background: #f1f1f1;
+    --dark-color: #909090;
+    --dark-second-color: #f5f6fa;
+    --dark-background: #23242D;
+    --dark-second-background: #181818;
+}
+
+.light {
+    --main-bg-color: var(--light-background);
+    --second-bg-color: var(--light-second-background);
+    --main-color: var(--light-color);
+    --second-color: var(--light-second-color);
+}
+
+.dark {
+    --main-bg-color: var(--dark-background);
+    --second-bg-color: var(--dark-second-background);
+    --main-color: var(--dark-color);
+    --second-color: var(--dark-second-color);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--main-bg-color);
+    color: var(--main-color);
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background: var( --main-bg-color);
+    color: var( --main-color);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 4px 1px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.nav-link {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    padding: 21px 10px;
+    font-size: 17px;
+    position: relative;
+    color: var(--second-color);
+}
+
+.nav-link:hover {
+    cursor: pointer;
+}
+
+.navbar-nav i {
+    font-size: 1.4rem;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+.navbar-serch {
+    margin: auto;
+    position: relative;
+    width: 50%;
+}
+
+.navbar-serch input {
+    background: #f1f1f1;
+    border: none;
+    padding: 12px 50px 12px 50px;
+    width: 100%;
+    outline: none;
+    color: var(--main-color);
+    border-radius: 20px;
+}
+
+.navbar-serch i {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.logo {
+    height: 60px;
+    padding: 10px;
+}
+
+.avt img {
+    height: 39px;
+    width: 39px;
+    border-radius: 50%;
+}
+
+.avt {
+    padding: 11px;
+}
+
+.navbar-badge {
+    font-size: .6rem;
+    padding: 2px 4px;
+    position: absolute;
+    right: 5px;
+    top: 9px;
+    color: #ffffff;
+    border-radius: 5px;
+    background: var(--danger-color)
+}
