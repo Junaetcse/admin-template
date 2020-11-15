@@ -22,7 +22,7 @@
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars" onclick="collapseSidebar()"></i>
                 </a>
             </li>
             <li class="nav-item">
@@ -39,10 +39,12 @@
         <ul class="navbar-nav nav-right">
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link">
-                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-bell dropdown-toggle" data-toggle="notification-menu"></i>
                     <span class="navbar-badge">15</span>
                 </a>
-                <ul class="dropdown-menu notification-menu">
+
+                <!-- Notification Board  Start-->
+                <!-- <ul class="dropdown-menu notification-menu" id="notification-menu">
                     <div class="dropdown-menu-header">
                         <span>Notification</span>
                     </div>
@@ -223,22 +225,167 @@
                         <span>View All Notification</span>
                     </div>
 
-                </ul>
+                </ul> -->
+                <!-- Notification Board  End-->
             </li>
             <li class="nav-item">
-                <div class="avt">
-                    <img src="/assets/tuat.jpg" alt="Profile">
+                <div class="avt dropdown">
+                    <img src="assets/tuat.jpg" alt="User image" class="dropdown-toggle" data-toggle="user-menu">
+                    <!-- User Profile Board  Start-->
+                    <!-- <ul class="dropdown-menu" id="user-menu">
+                        <li class="dropdown-menu-item">
+                            <a class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-cog"></i>
+                                </div>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="far fa-credit-card"></i>
+                                </div>
+                                <span>Payments</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-spinner"></i>
+                                </div>
+                                <span>Projects</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-sign-out-alt"></i>
+                                </div>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                    </ul> -->
+                    <!-- User Profile Board  End-->
                 </div>
             </li>
         </ul>
 
     </div>
     <div class="sidebar">
-
+        <ul class="sidebar-nav">
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <span>
+						Dashboard
+					</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link active">
+                    <div>
+                        <i class="fab fa-accusoft"></i>
+                    </div>
+                    <span>Lorem</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <span>Morbi</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-spinner"></i>
+                    </div>
+                    <span>Praesent</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <span>Pellentesque</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <span>Morbi</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <span>Praesent</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <span>Pellentesque</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-adjust"></i>
+                    </div>
+                    <span>Morbi</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fab fa-algolia"></i>
+                    </div>
+                    <span>Praesent</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-audio-description"></i>
+                    </div>
+                    <span>Pellentesque</span>
+                </a>
+            </li>
+        </ul>
     </div>
     <div class="wrapper">
-
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptates natus animi ex. Delectus voluptas error optio consequatur inventore autem reprehenderit omnis voluptatem similique explicabo, amet numquam iusto beatae totam fuga aliquam
+            debitis laborum odit, est esse odio nobis praesentium libero. Rerum, consectetur. Doloribus earum repudiandae pariatur. Repudiandae dolorum culpa nihil recusandae itaque praesentium perferendis veniam perspiciatis, numquam quae non! Error,
+            consectetur sequi quisquam architecto explicabo eveniet illum nostrum id. Deleniti, accusamus molestias libero fugit sequi eius praesentium eveniet numquam dolorem maxime velit eum eligendi quidem. Non iste recusandae culpa praesentium modi
+            fugiat, sunt aliquam aspernatur obcaecati? Nisi, id! Sed?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptates natus animi ex. Delectus voluptas error optio consequatur inventore autem reprehenderit omnis voluptatem similique explicabo, amet numquam iusto beatae totam fuga aliquam
+            debitis laborum odit, est esse odio nobis praesentium libero. Rerum, consectetur. Doloribus earum repudiandae pariatur. Repudiandae dolorum culpa nihil recusandae itaque praesentium perferendis veniam perspiciatis, numquam quae non! Error,
+            consectetur sequi quisquam architecto explicabo eveniet illum nostrum id. Deleniti, accusamus molestias libero fugit sequi eius praesentium eveniet numquam dolorem maxime velit eum eligendi quidem. Non iste recusandae culpa praesentium modi
+            fugiat, sunt aliquam aspernatur obcaecati? Nisi, id! Sed?</p>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
